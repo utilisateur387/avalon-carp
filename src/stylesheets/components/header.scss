@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    align-items: center;
+    z-index: 100;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .header-logo {
+        width: 100px;
+    }
+    .header-link {
+        display: block;
+        width: 15%;
+    }
+    .header-link:nth-last-child(1),
+    .header-link:nth-last-child(2) {
+        display: block;
+        width: 15%;
+        text-align: right;
+    }
+    .header-link:nth-last-child(3) {
+        text-align: center;
+    }
+}

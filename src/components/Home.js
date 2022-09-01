@@ -1,7 +1,9 @@
 const Home = () => {
+  // const backgroundImg = `images/home/img-background-01.png`;
+
   return (
     <div>
-      Home
+      <img src="images/home/img-background-01.png" className="home-background" alt="lac"/>
     </div>
   )
 }

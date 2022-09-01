@@ -1,0 +1,30 @@
+footer {
+    background: var(--green);
+    color: var(--beige);
+    width: 100vw;
+    left: 0;
+    //bottom: 0;
+    position: absolute;
+    padding: 64px 0;
+    text-transform: uppercase;
+
+    a {
+        color: var(--beige) !important;
+    }
+    & > div {
+        margin: 0 auto;
+        max-width: 1086px;
+        display: flex;
+    }
+
+    .footer-links {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .footer-logo {
+        display: block;
+    }
+    .footer-infos {
+
+    }
+}
