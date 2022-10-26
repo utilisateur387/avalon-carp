@@ -2,6 +2,7 @@
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./pages/home.scss";
+@import "./pages/reglement.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,11 +22,14 @@ code {
     monospace;
 }
 
-header, main {
+header > div, main {
   margin: 0 auto;
   max-width: 1086px;
   //padding-left: 32px;
   //padding-right: 32px;
+}
+.home {
+  z-index: -10;
 }
 /*header, main, footer {*/
 /*  margin: 0 auto;*/
@@ -36,4 +40,33 @@ a {
 }
 a:visited {
   color: initial;
+}
+
+.bg-blur {
+    color: white;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3rem 4rem;
+}
+h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+h3 {
+  font-size: 1.25em;
+}
+.img-background {
+  min-width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  object-fit: cover;
+  // background-attachment: fixed;
+}
+.empty-first-container {
+    // position: relative;
+    height: 60vh;
 }

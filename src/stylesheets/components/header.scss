@@ -1,10 +1,15 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    height: 140px;
-    align-items: center;
-    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    color: white !important;
 
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        height: 140px;
+        align-items: center;
+        z-index: 100;
+    }
     a {
         color: white;
         text-decoration: none;
@@ -18,6 +23,7 @@ header {
     .header-link {
         display: block;
         width: 15%;
+        color: white !important;
     }
     .header-link:nth-last-child(1),
     .header-link:nth-last-child(2) {
