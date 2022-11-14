@@ -25,11 +25,16 @@ code {
     monospace;
 }
 
-header > div, main {
+header > div, .container-full {
   margin: 0 auto;
   max-width: 1086px;
-  //padding-left: 32px;
-  //padding-right: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.container-full {
+  // padding-top: 64px;
+  // padding-bottom: 64px;
+  padding: 64px 32px;
 }
 .home {
   z-index: -10;
@@ -44,12 +49,17 @@ a {
 a:visited {
   color: initial;
 }
-
 .bg-blur {
     color: white;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.2);
     // padding: 3rem 4rem;
+}
+.bg-beige {
+  background-color: var(--beige);
+}
+.bg-green {
+  background-color: var(--green);
 }
 h1, h2 {
   font-size: 2.5em;
