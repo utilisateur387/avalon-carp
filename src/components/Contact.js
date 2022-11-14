@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div>
-      Contact
+      <h1>Réservez dès à présent votre prochaine session de pêche.</h1>
     </div>
   )
 }

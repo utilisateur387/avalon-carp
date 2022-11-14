@@ -1,6 +1,9 @@
 import {Link} from "react-router-dom";
+import { useTranslation, Trans } from 'react-i18next';
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <footer>
       <div className="grid grid-cols-12 gap-4">
@@ -13,10 +16,12 @@ const Footer = () => {
         <div/>
 
         <ul className="footer-links col-span-3">
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/domaine">Domaine</Link></li>
-          <li><Link to="/reglement">Règlement</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/"><Trans i18nKey="footer.link1">Accueil</Trans></Link></li>
+          <li><Link to="/domaine"><Trans i18nKey="footer.link2">Domaine</Trans></Link></li>
+          <li><Link to="/reglement"><Trans i18nKey="footer.link3">Règlement</Trans></Link></li>
+          <li><Link to="/contact"><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
+          <li><Link to="/"><Trans i18nKey="footer.link5">Politique de confidentialité</Trans></Link></li>
+          <li><Link to="/"><Trans i18nKey="footer.link6">Mentions légales</Trans></Link></li>
         </ul>
 
         <div className="footer-infos col-span-3">
@@ -34,7 +39,7 @@ const Footer = () => {
           <hr className="mb-1"/>
           <hr/>
           <p className="mt-5">
-            9am to 12pm — 2pm to 5pm
+            <Trans i18nKey="footer.horaires">9am to 12pm — 2pm to 5pm</Trans>
           </p>
         </div>
 
