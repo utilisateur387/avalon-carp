@@ -3,7 +3,7 @@ import logo from '../logo-white.svg';
 
 const Header = () => {
   return (
-    <header>
+    <header className="z-[1000]">
       <div>
         <Link to="/domaine" className="header-link">Le Domaine</Link>
         <Link to="/offres" className="header-link">Nos Offres</Link>

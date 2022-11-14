@@ -1,7 +1,10 @@
+@import "./fonts/fonts.css";
 @import "./config/colors.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./pages/home.scss";
+@import "./pages/domaine.scss";
+@import "./pages/offres.scss";
 @import "./pages/reglement.scss";
 @tailwind base;
 @tailwind components;
@@ -9,7 +12,7 @@
 
 body {
   /*margin: 0 32px;*/
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Mohave", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -46,15 +49,19 @@ a:visited {
     color: white;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 3rem 4rem;
+    // padding: 3rem 4rem;
 }
-h2 {
+h1, h2 {
   font-size: 2.5em;
   text-transform: uppercase;
   line-height: 1.2em;
 }
+h1, .bold {
+  font-weight: 600;
+}
 h3 {
   font-size: 1.25em;
+  text-transform: uppercase;
 }
 .img-background {
   min-width: 100vw;
@@ -69,4 +76,19 @@ h3 {
 .empty-first-container {
     // position: relative;
     height: 60vh;
+}
+.cta {
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+}
+.cta-green {
+  background-color: var(--green);
+  color: var(--beige);
+}
+.cta-red {
+  background-color: var(--orange);
+  color: var(--beige);
+}
+.white {
+  color: white;
 }

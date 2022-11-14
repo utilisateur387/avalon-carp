@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Mohave';
+    src: url('./Mohave-Bold.ttf');
+    src:
+    url('./Mohave-Bold.ttf') format('ttf'),
+        /*url('../../fonts/ABCArizonaSerif-Thin-Trial.eot?#iefix') format('embedded-opentype'),*/
+        /* url('./ABCArizonaSerif-Thin-Trial.woff') format('woff'),
+        url('./ABCArizonaSerif-Thin-Trial.otf') format('opentype'); */;
+    font-style: normal;
+    font-display: swap;
+}
