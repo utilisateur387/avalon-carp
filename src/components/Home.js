@@ -8,12 +8,12 @@ const Home = () => {
       <img src="images/home/img-background-01.png" className="img-background" alt="lac"/>
       <div className="empty-first-container"></div>
 
-      <div className="container-full">
+      <div className="container-child">
         <h1 className="text-white w-1/3"><Trans i18nKey="home.h1">Un moment de pêche et de détente au coeur des forêts du Limousin.</Trans></h1>
       </div>
 
-      <div className="bg-green">
-        <div class="container-full">
+      <div className="container-full bg-green">
+        <div class="container-child">
           <div className="flex space-x-11 ">
             <div className="w-5/12 pr-4 pt-20">
               <img src="images/home/carte-france.svg" alt="Carte de la France" className="pt-10 mx-auto" />
@@ -37,27 +37,29 @@ const Home = () => {
         </div>
       </div>
 
-      <section class="contact-form-section">
-        <h2 class="text-center mx-auto"><Trans i18nKey="home.h2-preparez">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h2>
-        <form action="" className="mx-auto w-6/12">
-          <div class="flex">
-            <input type="text" placeholder={t('form.nom')}/>
-            <input type="text" placeholder={t('form.prenom')}/>
-          </div>
-          <div class="flex">
-            <input type="text" placeholder={t('form.mail')}/>
-            <input type="text" placeholder={t('form.telephone')}/>
-          </div>
-          <input type="text" placeholder={t('form.message')}/>
-          <div class="flex">
-            <input type="submit" value={t('form.submit')} class="cta cta-green block w-1/2"/>
-            <div class="block w-1/2">
-              <a href="">
-                <button class="cta cta-red"><Trans i18nKey="form.infos-pratiques">Infos pratiques</Trans></button>
-              </a>
+      <section class="contact-form-section container-full">
+        <div className="container-child">
+          <h2 class="text-center mx-auto"><Trans i18nKey="form.preparez-maintenant">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h2>
+          <form action="" className="mx-auto w-6/12">
+            <div class="flex">
+              <input type="text" placeholder={t('form.nom')}/>
+              <input type="text" placeholder={t('form.prenom')}/>
             </div>
-          </div>
-        </form>
+            <div class="flex">
+              <input type="text" placeholder={t('form.mail')}/>
+              <input type="text" placeholder={t('form.telephone')}/>
+            </div>
+            <input type="text" placeholder={t('form.message')}/>
+            <div class="flex">
+              <input type="submit" value={t('form.submit')} class="cta cta-green block w-1/2"/>
+              <div class="block w-1/2">
+                <a href="">
+                  <button class="cta cta-red"><Trans i18nKey="form.infos-pratiques">Infos pratiques</Trans></button>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </div>
   )

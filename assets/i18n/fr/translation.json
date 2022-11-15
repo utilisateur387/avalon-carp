@@ -87,5 +87,38 @@
     "link2": "Domaine",
     "link3": "Règlement",
     "link4": "Contact"
+  },
+  "offres": {
+    "h1": "retrouvez ici des formules adaptées à chacun, pour une expérience unique.",
+    "decouvrez-offres": "découvrez <strong>nos offres</strong>",
+    "dates": "du 01/03 au 31/10",
+    "cette-formule-comprend": "Cette formule comprend :",
+    "acces-lac": "accès au lac",
+    "cabane-peche": "cabane de pêche",
+    "acces-sanitaires": "accès aux sanitaires",
+    "eau-potable": "eau potable",
+    "point-froid": "point froid (congélateur)",
+    "charge-telephone": "Service de charge de téléphone inclus.<br/>Semaine complète.",
+    "petit-dejeuner": "petit déjeuner",
+    "repas-soir": "repas du soir",
+    "acces-club-house": "accès au club house",
+    "precision-reservation": "À préciser lors de la réservation sous peine de manque de disponibilité. <br/>Semaine complète.",
+    "cannes": "3 cannes",
+    "rod-pod": "1 rod pod",
+    "bed-chair": "1 bed chair",
+    "level-chair": "1 level chair",
+    "epuisette": "1 épuisette",
+    "tapis-reception": "1 tapis de réception",
+    "forfaits-personnalisables": "Forfaits personnalisables ; consultez-nous pour plus d’informations. possibilité de locations de matériel et d’achats d’appâts sur place. possibilité de privatisation",
+    "conditions-reservation": "Conditions de réservation",
+    "p-01": "Pour les réservations, il vous sera demandé 50% du montant total. Le règlement daté et signé devra nous être retourné. Envoi de l’acompte par virement bancaire.",
+    "p-02": "Tout acompte non reçu sous 10 jours entraînera la remise en disponibilité de votre poste.",
+    "p-03": "Le reste du séjour sera réglé à l’arrivée. <br/>(Envoi de l’acompte à AVALON CARP, 1 route de la Faucherie – 87270 Bonnac-la-Côte, à l’ordre AVALON CARP SAS.",
+    "p-04": "L’acompte de 50% obligatoire pour toute réservation ne sera remboursé en aucun cas. En cas d’annulation plus de 1 mois avant la date d’arrivée prévue, il pourra être reporté sur une session ultérieure sous 12 mois, si l’annulation intervient moins de 1 mois avant la date d’arrivée, il sera perdu si vous ne venez pas ou il pourra être cédé à un tiers.",
+    "p-05": "Aucun remboursement, report ou avoir en cas de départ anticipé de la part du pêcheur ne sera effectué quelle qu’en soit la raison.",
+    "contactez-nous": "Contactez-nous"
+  },
+  "galerie": {
+    "h1": "DÉCOUVREZ LES PLUS BELLES PHOTOS DE AVALON CARP LAKE."
   }
 }

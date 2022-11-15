@@ -7,14 +7,17 @@ const Reglement = () => {
     <>
       <img src="images/reglement/img-background-reglement.png" className="img-background" alt="lac"/>
       <div class="empty-first-container"></div>
-      <div className="flex justify-end container-full">
-        <h1 class="uppercase white text-right w-5/12">
-          <Trans i18nKey="reglement.h1">Quelques règles à connaître pour appréhender au mieux votre visite.</Trans>
-        </h1>
+      <div className="container-full">
+        <div className="container-child flex justify-end">
+          <h1 class="uppercase white text-right w-5/12">
+            <Trans i18nKey="reglement.h1">Quelques règles à connaître pour appréhender au mieux votre visite.</Trans>
+          </h1>
+        </div>
       </div>
+      
       <section className="reglement bg-beige">
         <div className="container-full">
-          <div className="lg:columns-3 md:columns-1">
+          <div className="container-child lg:columns-3 md:columns-1">
             <div class="reglement-item">
               <img src="images/reglement/picto-horaires.svg" />
               <div>

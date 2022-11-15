@@ -5,8 +5,8 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <footer>
-      <div className="grid grid-cols-12 gap-4">
+    <footer className="container-full">
+      <div className="grid grid-cols-12 gap-4 container-child">
         <div/>
 
         <div className="col-span-3">
@@ -20,6 +20,12 @@ const Footer = () => {
           <li><Link to="/domaine"><Trans i18nKey="footer.link2">Domaine</Trans></Link></li>
           <li><Link to="/reglement"><Trans i18nKey="footer.link3">Règlement</Trans></Link></li>
           <li><Link to="/contact"><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
+
+          <div className="flex space-x-2 my-3">
+            <a href="http://facebook.com"><img src="images/picto-fb.svg" alt="" /></a>
+            <a href="http://instagram.com"><img src="images/picto-ig.svg" alt="" /></a>
+          </div>
+          
           <li><Link to="/"><Trans i18nKey="footer.link5">Politique de confidentialité</Trans></Link></li>
           <li><Link to="/"><Trans i18nKey="footer.link6">Mentions légales</Trans></Link></li>
         </ul>
