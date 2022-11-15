@@ -5,7 +5,7 @@ const Reglement = () => {
 
   return (
     <>
-      <img src="images/reglement/img-background-reglement.png" className="img-background" alt="lac"/>
+      <img src="images/reglement/img-background-reglement.jpg" className="img-background" alt="lac"/>
       <div class="empty-first-container"></div>
       <div className="container-full">
         <div className="container-child flex justify-end">

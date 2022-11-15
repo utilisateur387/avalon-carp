@@ -5,7 +5,7 @@ const Domaine = () => {
 
   return (
     <div className="page-domaine">
-      <img src="images/domaine/img-background-domaine.png" className="img-background" alt="lac"/> 
+      <img src="images/domaine/img-background-domaine.jpg" className="img-background" alt="lac"/> 
       
       <div className="empty-first-container"></div>
 

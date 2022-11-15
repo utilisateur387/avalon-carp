@@ -5,7 +5,7 @@ const Offres = () => {
 
   return (
     <div className="page-offres">
-      <img src="images/offres/img-background-offres.png" className="img-background" alt="lac"/> 
+      <img src="images/offres/img-background-offres.jpg" className="img-background" alt="lac"/> 
       
       <div className="empty-first-container"></div>
 
