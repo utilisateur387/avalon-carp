@@ -9,7 +9,7 @@ const Reglement = () => {
       
       <div class="empty-first-container flex items-end">
         <div className="container-child flex justify-end">
-          <h1 class="uppercase white text-right w-5/12">
+          <h1 class="uppercase white text-right md:w-5/12 sm:w-full">
             <Trans i18nKey="reglement.h1">Quelques règles à connaître pour appréhender au mieux votre visite.</Trans>
           </h1>
         </div>

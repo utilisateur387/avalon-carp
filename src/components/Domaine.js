@@ -9,7 +9,7 @@ const Domaine = () => {
       
       <div className="empty-first-container flex items-end">
         <div className="container-child">
-          <h1 className="uppercase white w-1/3"><Trans i18nKey="domaine.h1-01">Découvrez tout ce que le domaine avalon carp a à vous offrir.</Trans></h1>
+          <h1 className="uppercase white md:w-5/12 sm:w-full"><Trans i18nKey="domaine.h1-01">Découvrez tout ce que le domaine avalon carp a à vous offrir.</Trans></h1>
         </div>
       </div>
 
@@ -17,7 +17,7 @@ const Domaine = () => {
       <div className="container-full bg-green">
         <div className="container-child">
           
-          <div className="bg-blur w-7/12 text-white -z-10 px-16 py-14">
+          <div className="bg-blur lg:w-7/12 md:w-full text-white -z-10 px-16 py-14">
             <div>
               <h3><Trans i18nKey="domaine.h3-01">Situé en pleine forêt dans un cadre calme et reposant, AVALON est l’endroit idéal pour se déconnecter du quotidien et profiter de la nature.</Trans></h3>
               <div className="flex justify-center space-x-10 mb-5">

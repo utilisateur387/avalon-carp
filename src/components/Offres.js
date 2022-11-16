@@ -9,7 +9,7 @@ const Offres = () => {
       
       <div className="empty-first-container flex items-end">
         <div className="container-child">
-          <h1 class="uppercase white"><Trans i18nKey="offres.h1">retrouvez ici des formules adaptées à chacun, pour une expérience unique.</Trans></h1>
+          <h1 class="uppercase white md:w-5/12 sm:w-full"><Trans i18nKey="offres.h1">retrouvez ici des formules adaptées à chacun, pour une expérience unique.</Trans></h1>
         </div>
       </div>
 
@@ -21,6 +21,9 @@ const Offres = () => {
       <div className="container-full bg-mauve">
         <div class="cards container-child justify-between md:columns-3 sm:columns-1">
           <div class="card bg-blur">
+            <div className="flex justify-center offre-picto">
+              <img src="images/offres/picto-drive-survive.svg" alt="" />
+            </div>
             <h3 class="uppercase bold mb-5"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
             <ul>
               <li><Trans i18nKey="offres.acces-lac">accès au lac</Trans></li>
@@ -32,6 +35,9 @@ const Offres = () => {
             <p><small><Trans i18nKey="offres.charge-telephone">Service de charge de téléphone inclus.<br/>Semaine complète.</Trans></small></p>
           </div>
           <div class="card bg-blur">
+            <div className="flex justify-center offre-picto">
+              <img src="images/offres/picto-food-wild.svg" alt=""/>
+            </div>
             <h3 class="uppercase bold mb-5"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
             <ul>
               <li><Trans i18nKey="offres.petit-dejeuner">petit déjeuner</Trans></li>
@@ -41,6 +47,9 @@ const Offres = () => {
             <p><small><Trans i18nKey="offres.precision-reservation">À préciser lors de la réservation sous peine de manque de disponibilité. <br/>Semaine complète.</Trans></small></p>
           </div>
           <div class="card bg-blur">
+            <div className="flex justify-center offre-picto">
+              <img src="images/offres/picto-on-the-rod.svg" alt="" />
+            </div>
             <h3 class="uppercase bold mb-5"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
             <ul>
               <li><Trans i18nKey="offres.cannes">3 cannes</Trans></li>

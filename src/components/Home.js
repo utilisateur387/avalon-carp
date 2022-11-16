@@ -9,7 +9,7 @@ const Home = () => {
       
       <div className="empty-first-container flex items-end">
         <div className="container-child">
-          <h1 className="text-white w-1/3"><Trans i18nKey="home.h1">Un moment de pêche et de détente au coeur des forêts du Limousin.</Trans></h1>
+          <h1 className="text-white md:w-5/12 sm:w-full"><Trans i18nKey="home.h1">Un moment de pêche et de détente au coeur des forêts du Limousin.</Trans></h1>
         </div>
       </div>
 
