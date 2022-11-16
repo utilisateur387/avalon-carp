@@ -7,19 +7,21 @@ const Offres = () => {
     <div className="page-offres">
       <img src="images/offres/img-background-offres.jpg" className="img-background" alt="lac"/> 
       
-      <div className="empty-first-container"></div>
-
-      <div className="container-child">
-        <h1 class="uppercase white"><Trans i18nKey="offres.h1">retrouvez ici des formules adaptées à chacun, pour une expérience unique.</Trans></h1>
+      <div className="empty-first-container flex items-end">
+        <div className="container-child">
+          <h1 class="uppercase white"><Trans i18nKey="offres.h1">retrouvez ici des formules adaptées à chacun, pour une expérience unique.</Trans></h1>
+        </div>
       </div>
 
-      <h2 className="text-center white"><Trans i18nKey="offres.decouvrez-offres">découvrez <strong>nos offres</strong></Trans></h2>
-      <h3 className="text-center white bold uppercase"><Trans i18nKey="offres.dates">du 01/03 au 31/10</Trans></h3>
+      <div className="container-child offres-main-title">
+        <h2 className="text-center white"><Trans i18nKey="offres.decouvrez-offres">découvrez <strong>nos offres</strong></Trans></h2>
+        <h3 className="text-center white bold uppercase"><Trans i18nKey="offres.dates">du 01/03 au 31/10</Trans></h3>
+      </div>
 
       <div className="container-full bg-mauve">
-        <div class="cards flex container-child justify-between">
-          <div class="card bg-blur w-1/4">
-            <h3 class="uppercase"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
+        <div class="cards container-child justify-between md:columns-3 sm:columns-1">
+          <div class="card bg-blur">
+            <h3 class="uppercase bold mb-5"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
             <ul>
               <li><Trans i18nKey="offres.acces-lac">accès au lac</Trans></li>
               <li><Trans i18nKey="offres.cabane-peche">cabane de pêche</Trans></li>
@@ -29,8 +31,8 @@ const Offres = () => {
             </ul>
             <p><small><Trans i18nKey="offres.charge-telephone">Service de charge de téléphone inclus.<br/>Semaine complète.</Trans></small></p>
           </div>
-          <div class="card bg-blur w-1/4">
-            <h3 class="uppercase"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
+          <div class="card bg-blur">
+            <h3 class="uppercase bold mb-5"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
             <ul>
               <li><Trans i18nKey="offres.petit-dejeuner">petit déjeuner</Trans></li>
               <li><Trans i18nKey="offres.repas-soir">repas du soir</Trans></li>
@@ -38,8 +40,8 @@ const Offres = () => {
             </ul>
             <p><small><Trans i18nKey="offres.precision-reservation">À préciser lors de la réservation sous peine de manque de disponibilité. <br/>Semaine complète.</Trans></small></p>
           </div>
-          <div class="card bg-blur w-1/4">
-            <h3 class="uppercase"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
+          <div class="card bg-blur">
+            <h3 class="uppercase bold mb-5"><Trans i18nKey="offres.cette-formule-comprend">Cette formule comprend :</Trans></h3>
             <ul>
               <li><Trans i18nKey="offres.cannes">3 cannes</Trans></li>
               <li><Trans i18nKey="offres.rod-pod">1 rod pod</Trans></li>
@@ -52,14 +54,17 @@ const Offres = () => {
           </div>
         </div>
 
-        <h3 className="text-center white container-child"><Trans i18nKey="offres.forfaits-personnalisables">Forfaits personnalisables ; consultez-nous pour plus d’informations. possibilité de locations de matériel et d’achats d’appâts sur place. possibilité de privatisation</Trans></h3>
+        <div className="mt-16">
+          <h3 className="text-center white container-child w-8/12">
+            <Trans i18nKey="offres.forfaits-personnalisables">Forfaits personnalisables ; consultez-nous pour plus d’informations. possibilité de locations de matériel et d’achats d’appâts sur place. possibilité de privatisation</Trans>
+          </h3>
+        </div>
       </div>
 
       <div className="container-full bg-green">
         <div className="container-child">
-          <div className="bg-blur">
+          <div className="bg-blur lg:w-5/12 md:w-full">
             <h3><Trans i18nKey="offres.conditions-reservation">Conditions de réservation</Trans></h3>
-
 
             <p><Trans i18nKey="offres.p-01">Pour les réservations, il vous sera demandé 50% du montant total. Le règlement daté et signé devra nous être retourné. Envoi de l’acompte par virement bancaire.</Trans></p>
             <p><Trans i18nKey="offres.p-02">Tout acompte non reçu sous 10 jours entraînera la remise en disponibilité de votre poste.</Trans></p>

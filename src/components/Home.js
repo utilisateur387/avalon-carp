@@ -6,11 +6,13 @@ const Home = () => {
   return (
     <div className="home">
       <img src="images/home/img-background-01.png" className="img-background" alt="lac"/>
-      <div className="empty-first-container"></div>
-
-      <div className="container-child">
-        <h1 className="text-white w-1/3"><Trans i18nKey="home.h1">Un moment de pêche et de détente au coeur des forêts du Limousin.</Trans></h1>
+      
+      <div className="empty-first-container flex items-end">
+        <div className="container-child">
+          <h1 className="text-white w-1/3"><Trans i18nKey="home.h1">Un moment de pêche et de détente au coeur des forêts du Limousin.</Trans></h1>
+        </div>
       </div>
+
 
       <div className="container-full bg-green">
         <div class="container-child">

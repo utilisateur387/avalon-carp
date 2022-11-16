@@ -7,11 +7,12 @@ const Domaine = () => {
     <div className="page-domaine">
       <img src="images/domaine/img-background-domaine.jpg" className="img-background" alt="lac"/> 
       
-      <div className="empty-first-container"></div>
-
-      <div className="container-child">
-        <h1 className="uppercase white w-1/3"><Trans i18nKey="domaine.h1-01">Découvrez tout ce que le domaine avalon carp a à vous offrir.</Trans></h1>
+      <div className="empty-first-container flex items-end">
+        <div className="container-child">
+          <h1 className="uppercase white w-1/3"><Trans i18nKey="domaine.h1-01">Découvrez tout ce que le domaine avalon carp a à vous offrir.</Trans></h1>
+        </div>
       </div>
+
 
       <div className="container-full bg-green">
         <div className="container-child">

@@ -6,8 +6,8 @@ const Reglement = () => {
   return (
     <>
       <img src="images/reglement/img-background-reglement.jpg" className="img-background" alt="lac"/>
-      <div class="empty-first-container"></div>
-      <div className="container-full">
+      
+      <div class="empty-first-container flex items-end">
         <div className="container-child flex justify-end">
           <h1 class="uppercase white text-right w-5/12">
             <Trans i18nKey="reglement.h1">Quelques règles à connaître pour appréhender au mieux votre visite.</Trans>

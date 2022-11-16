@@ -3,12 +3,21 @@ header {
     width: 100vw;
     color: white !important;
 
-    & > div {
+    & div.container-full {
+        z-index: 100;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%);
+        padding: 0;
+        width: 100vw;
+        // font-weight: 500;
+    }
+    & div.container-child {
         display: flex;
         justify-content: space-between;
         height: 140px;
         align-items: center;
         z-index: 100;
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%);
+        font-weight: 500;
     }
     a {
         color: white;
@@ -33,5 +42,7 @@ header {
     }
     .header-link:nth-last-child(3) {
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
