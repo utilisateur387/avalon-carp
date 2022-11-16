@@ -32,7 +32,7 @@ const Offres = () => {
               <li><Trans i18nKey="offres.eau-potable">eau potable</Trans></li>
               <li><Trans i18nKey="offres.point-froid">point froid (congélateur)</Trans></li>
             </ul>
-            <p><small><Trans i18nKey="offres.charge-telephone">Service de charge de téléphone inclus.<br/>Semaine complète.</Trans></small></p>
+            <p><small><Trans i18nKey="offres.charge-telephone">Séjours de 24h, 2 nuits ou semaine complète.</Trans></small></p>
           </div>
           <div class="card bg-blur">
             <div className="flex justify-center offre-picto">
@@ -59,12 +59,12 @@ const Offres = () => {
               <li><Trans i18nKey="offres.epuisette">1 épuisette</Trans></li>
               <li><Trans i18nKey="offres.tapis-reception">1 tapis de réception</Trans></li>
             </ul>
-            <p><small><Trans i18nKey="offres.charge-telephone">Service de charge de téléphone inclus.<br/>Semaine complète.</Trans></small></p>
+            <p><small><Trans i18nKey="offres.formule-03">Ne comprends pas les détecteurs et le petit matériel. <br/>Séjours de 24h, 2 nuits ou semaine complète.</Trans></small></p>
           </div>
         </div>
 
         <div className="mt-16">
-          <h3 className="text-center white container-child w-8/12">
+          <h3 className="text-center white container-child lg:w-8/12 md:w-full">
             <Trans i18nKey="offres.forfaits-personnalisables">Forfaits personnalisables ; consultez-nous pour plus d’informations. possibilité de locations de matériel et d’achats d’appâts sur place. possibilité de privatisation</Trans>
           </h3>
         </div>

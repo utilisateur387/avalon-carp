@@ -6,14 +6,15 @@ const Footer = () => {
 
   return (
     <footer className="container-full">
-      <div className="grid grid-cols-12 gap-4 container-child">
-        <div/>
+      <div className="md:grid grid-cols-12 gap-4 container-child flex justify-center">
+
+        <div></div>
 
         <div className="col-span-3">
           <img src="images/elements/logo-filled-white.png" className="footer-logo" alt="lac"/>
         </div>
 
-        <div/>
+        <div></div>
 
         <ul className="footer-links col-span-3">
           <li><Link to="/"><Trans i18nKey="footer.link1">Accueil</Trans></Link></li>
