@@ -5,7 +5,7 @@ header {
 
     & div.container-full {
         z-index: 100;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%);
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%);
         padding: 0;
         width: 100vw;
         // font-weight: 500;
@@ -16,8 +16,12 @@ header {
         height: 140px;
         align-items: center;
         z-index: 100;
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%);
         font-weight: 500;
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            height: 120px;
+        }
     }
     a {
         color: white;
@@ -33,6 +37,17 @@ header {
         display: block;
         width: 15%;
         color: white !important;
+
+        @media screen and (max-width: 768px) {
+            &:nth-child(1),
+            &:nth-child(2), 
+            &:nth-last-child(1), 
+            &:nth-last-child(2) {
+                display: none !important;
+            }
+
+            width: 80px;
+        }
     }
     .header-link:nth-last-child(1),
     .header-link:nth-last-child(2) {
@@ -44,5 +59,18 @@ header {
         text-align: center;
         display: flex;
         justify-content: center;
+    }
+
+    .menu-burger {
+        display: none;
+        position: fixed;
+        right: 32px;
+        top: 44px;
+        width: 32px;
+        cursor: pointer;
+        
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
     }
 }

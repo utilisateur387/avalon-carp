@@ -7,12 +7,14 @@ import Offres from "./components/Offres";
 import Reglement from "./components/Reglement";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
+import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
+      {/* <Menu /> */}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
