@@ -11,12 +11,12 @@ const ContactForm = ({ title = true, infosPratiques = true }) => {
             <h2 class="text-center mx-auto"><Trans i18nKey="form.preparez-maintenant">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h2>
             }
           <form action="" className="mx-auto contact-form">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 md:gap-4">
               <input type="text" placeholder={t('form.nom')}/>
               <input type="text" placeholder={t('form.prenom')}/>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 md:gap-4">
               <input type="text" placeholder={t('form.mail')}/>
               <input type="text" placeholder={t('form.telephone')}/>
             </div>
@@ -29,7 +29,7 @@ const ContactForm = ({ title = true, infosPratiques = true }) => {
               }
               <input type="submit" value={t('form.submit')} class="cta cta-green block"/>
               { infosPratiques &&
-                <a href="" className="block">
+                <a href="/contact" className="block">
                     <button class="cta cta-red w-full"><Trans i18nKey="form.infos-pratiques">Infos pratiques</Trans></button>
                 </a>
               }

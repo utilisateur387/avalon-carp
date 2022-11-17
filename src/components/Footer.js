@@ -23,12 +23,12 @@ const Footer = () => {
           <li><Link to="/contact"><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
 
           <div className="flex space-x-3 my-4 justify-center md:justify-start">
-            <a href="http://facebook.com"><img src="images/picto-fb.svg" alt="" /></a>
-            <a href="http://instagram.com"><img src="images/picto-ig.svg" alt="" /></a>
+            <a href="https://www.facebook.com/Avaloncarp/" target="_blank"><img src="images/picto-fb.svg" alt="" /></a>
+            <a href="https://www.instagram.com/avalon_carp_lake/" target="_blank"><img src="images/picto-ig.svg" alt="" /></a>
           </div>
           
-          <li><Link to="/"><Trans i18nKey="footer.link5">Politique de confidentialité</Trans></Link></li>
-          <li><Link to="/"><Trans i18nKey="footer.link6">Mentions légales</Trans></Link></li>
+          <li><Link to="/docs/avalon_carp_politique_confidentialite.pdf" target="_blank"><Trans i18nKey="footer.link5">Politique de confidentialité</Trans></Link></li>
+          <li><Link to="/docs/avalon_carp_mentions_legales.pdf" target="_blank"><Trans i18nKey="footer.link6">Mentions légales</Trans></Link></li>
         </ul>
 
         <div className="footer-infos col-span-3">

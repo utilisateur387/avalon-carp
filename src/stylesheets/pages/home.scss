@@ -1,17 +1,7 @@
 .home {
-    // .empty-first-container {
-    //     margin-bottom: -400px;
-    // }
     .contact-form-section {
-        background-color: var(--beige);
-        padding-top: 64px;
-        padding-bottom: 64px;
-    
-        h2 {
-            max-width: 550px;
-            color: var(--green);
-            margin-bottom: 2rem;
-        }
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     .home-bloc-description {
         @media screen and (min-width: 768px) {

@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <div className="page-contact">
       <div className="container-full">
-        <div className="container-child flex space-x-8">
-          <div className="green w-6/12">
+        <div className="container-child block md:flex md:space-x-8">
+          <div className="green w-10/12">
             <h1>Réservez dès à présent votre prochaine session de pêche.</h1>
 
             <div className="">
@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <ContactForm title={false} infosPratiques={false}  />
+          <ContactForm title={false} infosPratiques={false} />
         </div>
       </div>
 

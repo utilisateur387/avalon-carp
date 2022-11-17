@@ -46,7 +46,7 @@ const Home = () => {
             </div>
             <div className='text-right md:w-5/12 w-full z-10 md:pt-10'>
               <h2 className="white text-right mb-10"><Trans i18nKey="home.h2-02">LAISSEZ-VOUS SURPRENDRE PAR DES PAYSAGES SPECTACULAIRES ET DES POISSONS HORS DU COMMUN.</Trans></h2>
-              <a href="">
+              <a href="/domaine">
                 <button class="cta bg-blur"><Trans i18nKey="home.cta-decouvrir">DÉCOUVRIR LE DOMAINE</Trans></button>
               </a>
             </div>
@@ -54,7 +54,11 @@ const Home = () => {
         </div>
       </div>
 
-      <ContactForm/>
+      <div className="container-full bg-beige">
+        <div className="container-child">
+          <ContactForm/>
+        </div>
+      </div>
     </div>
   )
 }

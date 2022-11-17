@@ -112,7 +112,7 @@ const Reglement = () => {
 
             <div className="uppercase text-right">
               <h2 className="bold"><Trans i18nKey="reglement.besoin-precisions">besoin de<br/>précisions ?</Trans></h2>
-              <a href="#">
+              <a href="/contact">
                 <button class="cta cta-green"><Trans i18nKey="reglement.contactez-nous">CONTACTEZ-NOUS</Trans></button>  
               </a>
             </div>

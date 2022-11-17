@@ -88,7 +88,7 @@ const Offres = () => {
 
           <img src="images/offres/img-equipe.png" alt="" />
 
-          <a href="">
+          <a href="/contact">
             <button className="cta cta-beige"><Trans i18nKey="offres.contactez-nous">Contactez-nous</Trans></button>
           </a>
         </div>

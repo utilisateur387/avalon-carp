@@ -8,7 +8,11 @@ const Galerie = () => {
     <div>
       <h1 className='text-center green'><Trans i18nKey="galerie.h1">DÉCOUVREZ LES PLUS BELLES PHOTOS DE AVALON CARP LAKE.</Trans></h1>
       
-      <ContactForm />
+      <div className="container-full bg-beige">
+        <div className="container-child">
+          <ContactForm />
+        </div>
+      </div>
     </div>
   )
 }

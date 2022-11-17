@@ -12,6 +12,7 @@ const Menu = ({ isMenuVisible, setIsMenuVisible }) => {
   };
   const handleClickMenuLink = () => {
     setIsMenuVisible(false)
+    window.scrollTo(0, 0)
   }
 
   useEffect(() => {
