@@ -14,6 +14,10 @@ const Reglement = () => {
           </h1>
         </div>
       </div>
+
+      <div className="caret-down">
+        <img src="images/picto-caret-down.svg" alt="" />
+      </div>
       
       <section className="reglement bg-beige">
         <div className="container-full">

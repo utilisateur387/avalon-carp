@@ -16,6 +16,11 @@ const Header = () => {
     console.log(isMenuVisible)
     setIsMenuVisible(!isMenuVisible)
   }
+  const handleClickLogo = () => {
+    setIsMenuVisible(false)
+  }
+
+
   return (
     <>
       <header className="z-[1000]">
@@ -27,7 +32,7 @@ const Header = () => {
             <Link to="/offres" className="header-link">
               <Trans i18nKey="nav.link2">Nos Offres</Trans>
             </Link>
-            <Link to="/" className="header-link">
+            <Link to="/" className="header-link" onClick={handleClickLogo}>
               <img src={logo} className="header-logo" alt="logo" />
             </Link>
             <Link to="/reglement" className="header-link">

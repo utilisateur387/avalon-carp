@@ -1,11 +1,38 @@
-.contact-form-section {
-    background-color: var(--beige);
-    padding-top: 64px;
-    padding-bottom: 64px;
-
-    h2 {
-        max-width: 600px;
-        color: var(--green);
+.home {
+    // .empty-first-container {
+    //     margin-bottom: -400px;
+    // }
+    .contact-form-section {
+        background-color: var(--beige);
+        padding-top: 64px;
+        padding-bottom: 64px;
+    
+        h2 {
+            max-width: 550px;
+            color: var(--green);
+            margin-bottom: 2rem;
+        }
     }
-
+    .home-bloc-description {
+        @media screen and (min-width: 768px) {
+            transform: translateY(-480px);
+            margin-bottom: -400px;
+        }
+        
+        h2 {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    .carte-france {
+        @media screen and (min-width: 768px) {
+            transform: translateY(-80px);
+        }
+    }
+    .img-vue-aerienne {
+        @media screen and (min-width: 768px) {
+            transform-origin: top left;
+            transform: scale(1.25);
+        }
+    }
 }

@@ -42,7 +42,7 @@ i18n
             "message": "Message",
             "submit": "Send",
             "infos-pratiques": "Practical information",
-            "preparez-maintenant": "START TO PREPARE YOUR NEXT FISHING SESSION NOW..</strong>"
+            "preparez-maintenant": "START PREPARING YOUR NEXT FISHING SESSION NOW</strong>"
           },
           "domaine": {
             "h1-01": "Discover everything that the site has to offer you.",

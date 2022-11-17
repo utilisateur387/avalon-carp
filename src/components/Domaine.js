@@ -13,6 +13,9 @@ const Domaine = () => {
         </div>
       </div>
 
+      <div className="caret-down">
+        <img src="images/picto-caret-down.svg" alt="" />
+      </div>
 
       <div className="container-full bg-green">
         <div className="container-child">

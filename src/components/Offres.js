@@ -13,6 +13,10 @@ const Offres = () => {
         </div>
       </div>
 
+      <div className="caret-down">
+        <img src="images/picto-caret-down.svg" alt="" />
+      </div>
+
       <div className="container-child offres-main-title">
         <h2 className="text-center white"><Trans i18nKey="offres.decouvrez-offres">découvrez <strong>nos offres</strong></Trans></h2>
         <h3 className="text-center white bold uppercase"><Trans i18nKey="offres.dates">du 01/03 au 31/10</Trans></h3>
