@@ -22,7 +22,7 @@ const Footer = () => {
           <li><Link to="/reglement"><Trans i18nKey="footer.link3">Règlement</Trans></Link></li>
           <li><Link to="/contact"><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
 
-          <div className="flex space-x-2 my-3">
+          <div className="flex space-x-3 my-4 justify-center md:justify-start">
             <a href="http://facebook.com"><img src="images/picto-fb.svg" alt="" /></a>
             <a href="http://instagram.com"><img src="images/picto-ig.svg" alt="" /></a>
           </div>

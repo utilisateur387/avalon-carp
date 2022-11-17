@@ -1,9 +1,11 @@
 @import "./fonts/fonts.css";
 @import "./config/colors.scss";
+@import "./components/contact-form.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/menu.scss";
 @import "./pages/home.scss";
+@import "./pages/contact.scss";
 @import "./pages/domaine.scss";
 @import "./pages/offres.scss";
 @import "./pages/reglement.scss";
@@ -112,6 +114,7 @@ h3 {
 .cta {
   padding: 1.5rem 2rem;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .cta-green {
   background-color: var(--green);

@@ -95,7 +95,7 @@ i18n
             "contactez-nous": "CONTACT US"
           },
           "footer": {
-            "link1": "Home page",
+            "link1": "Home",
             "link2": "The Site",
             "link3": "Rules",
             "link4": "Contact us",

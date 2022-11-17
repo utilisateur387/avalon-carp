@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
+import ContactForm from './ContactForm';
 const Home = () => {
   // const backgroundImg = `images/home/img-background-01.png`;
   const { t, i18n } = useTranslation();
@@ -34,7 +35,7 @@ const Home = () => {
               <h3 className="mb-4"><Trans i18nKey="home.h3-01">À SEULEMENT 20MN DU CENTRE DE LIMOGES LE DOMAINE AVALON CARP LAKE EST UN PLAN D’EAU DE 3 HECTARES EXCLUSIVEMENT DÉDIÉ À LA PÊCHE DE LA CARPE EN NO KILL.</Trans></h3>
               <hr className="mb-3"/>
               <hr className="mb-8"/>
-              <p className="sm:mb-16 md:mb-40"><Trans i18nKey="home.p-01">Situé sur la commune de Bonnac-la-Côte (87), la pêche des carpes et silures se pratique sur le plan d’eau situé au centre du domaine bordé de forêts sauvages. Avec son cheptel composé de plus de 350 carpes avec une moyenne de 15kg dont quelques-unes de plus de 30kg ainsi qu’une  quinzaine de silures dont certains dépassent les 80kg les carpistes battent souvent leur record personnel pour note plus grand bonheur.</Trans></p>
+              <p className="mb-16 md:mb-40"><Trans i18nKey="home.p-01">Situé sur la commune de Bonnac-la-Côte (87), la pêche des carpes et silures se pratique sur le plan d’eau situé au centre du domaine bordé de forêts sauvages. Avec son cheptel composé de plus de 350 carpes avec une moyenne de 15kg dont quelques-unes de plus de 30kg ainsi qu’une  quinzaine de silures dont certains dépassent les 80kg les carpistes battent souvent leur record personnel pour note plus grand bonheur.</Trans></p>
               <h2 className="text-center"><Trans i18nKey="home.h2-01">AVALON EST LA DESTINATION PARFAITE POUR UN MOMENT DE PÊCHE EN TOUTE TRANQUILLITÉ.</Trans></h2>
             </div>
           </div>
@@ -53,30 +54,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section class="contact-form-section container-full">
-        <div className="container-child">
-          <h2 class="text-center mx-auto"><Trans i18nKey="form.preparez-maintenant">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h2>
-          <form action="" className="mx-auto w-6/12">
-            <div class="flex">
-              <input type="text" placeholder={t('form.nom')}/>
-              <input type="text" placeholder={t('form.prenom')}/>
-            </div>
-            <div class="flex">
-              <input type="text" placeholder={t('form.mail')}/>
-              <input type="text" placeholder={t('form.telephone')}/>
-            </div>
-            <input type="text" placeholder={t('form.message')}/>
-            <div class="flex">
-              <input type="submit" value={t('form.submit')} class="cta cta-green block w-1/2"/>
-              <div class="block w-1/2">
-                <a href="">
-                  <button class="cta cta-red"><Trans i18nKey="form.infos-pratiques">Infos pratiques</Trans></button>
-                </a>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
+      <ContactForm/>
     </div>
   )
 }
