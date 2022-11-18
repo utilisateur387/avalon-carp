@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation, Trans } from 'react-i18next';
 import ContactForm from "./ContactForm";
 

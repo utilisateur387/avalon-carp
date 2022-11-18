@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const Offres = () => {
   const { t, i18n } = useTranslation();
@@ -77,7 +78,7 @@ const Offres = () => {
       <div className="container-full bg-green">
         <div className="container-child block md:flex md:space-x-4">
           <div className="bg-blur md:w-5/12 w-full flex-none z-10 mb-10">
-            <h3><Trans i18nKey="offres.conditions-reservation">Conditions de réservation</Trans></h3>
+            <h3 className='mb-4'><Trans i18nKey="offres.conditions-reservation">Conditions de réservation</Trans></h3>
 
             <p><Trans i18nKey="offres.p-01">Pour les réservations, il vous sera demandé 50% du montant total. Le règlement daté et signé devra nous être retourné. Envoi de l’acompte par virement bancaire.</Trans></p>
             <p><Trans i18nKey="offres.p-02">Tout acompte non reçu sous 10 jours entraînera la remise en disponibilité de votre poste.</Trans></p>
@@ -88,9 +89,9 @@ const Offres = () => {
 
           <div className='flex items-end flex-col'>
             <img src="images/offres/img-equipe-02.jpg" className="origin-top-right md:scale-[115%] w-screen md:w-full max-w-none md:max-w-full md:mt-10 md:mb-[5rem] translate-x-[32px] md:translate-x-0" alt="" />
-            <a href="/contact" className='z-10 mt-10 md:mt-0 sm:w-full md:w-fit'>
-              <button className="cta cta-beige sm:w-full md:w-fit"><Trans i18nKey="offres.contactez-nous">Contactez-nous</Trans></button>
-            </a>
+            <Link to="/contact" className='z-10 mt-10 md:mt-0 w-full md:w-fit'>
+              <button className="cta cta-beige w-full md:w-fit"><Trans i18nKey="offres.contactez-nous">Contactez-nous</Trans></button>
+            </Link>
           </div>
         </div>
       </div>

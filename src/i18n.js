@@ -78,7 +78,7 @@ i18n
             "accompagnants-title": "guests",
             "accompagnants-p": "2 guests maximum (non fishing) per angler. Children under 12 years are free. All guests should be aware of and respect the rules of the lake and are the responsibility of the angler. ",
             "amorcage-title": "baiting",
-            "amorcage-p": "Only bait based on flour, boillies, pellets and particles are authorised. Maggots, earthworms and bloodworms are authorised if mixed in flour based bait. Grains and nuts are PROHIBITED except prepared corn. A bailiff can come and inspect baits at any time. Boillie cannons and catapults are PROHIBITED. Small rowing boats are PROHIBITED. Remote controlled bait boats are authorised.Any out of date or leftover bait should not be thrown into the lake. The bailiff will dispose of it properly.",
+            "amorcage-p": "Only bait based on flour, boillies, pellets and particles are authorised. Maggots, earthworms and bloodworms are authorised if mixed in flour based bait. Grains and nuts are PROHIBITED except prepared corn. A bailiff can come and inspect baits at any time. Boillie cannons and catapults are PROHIBITED. Small rowing boats are PROHIBITED. Remote controlled bait boats are authorised. Any out of date or leftover bait should not be thrown into the lake. The bailiff will dispose of it properly.",
             "feu-title": "fires/barbeques",
             "feu-p": "Only gas barbeques or barbeques on legs are authorised (campfires and any fires on the ground are prohibited). Cold cinders are to be taken away at the end of the session.",
             "comportement-title": "behaviour",

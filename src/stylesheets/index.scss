@@ -78,6 +78,10 @@ h1, h2 {
   font-size: 2.5em;
   text-transform: uppercase;
   line-height: 1.2em;
+
+  @media screen and (max-width: 640px) {
+    font-size: 2em;
+  }
 }
 h1 {
   font-weight: normal;
@@ -119,6 +123,10 @@ h3 {
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  @media screen and (max-width: 640px) {
+    bottom: 24px;
+  }
 
   img {
     width: 60px;
