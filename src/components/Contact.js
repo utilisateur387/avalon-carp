@@ -8,15 +8,15 @@ const Contact = () => {
   return (
     <div className="page-contact">
       <div className="container-full">
-        <div className="container-child block md:flex md:space-x-8">
-          <div className="green w-10/12">
-            <h1>Réservez dès à présent votre prochaine session de pêche.</h1>
+        <div className="container-child block md:flex md:space-x-10 justify-between">
+          <div className="green w-full md:w-4/12 flex-none">
+            <h1 className="text-center md:text-left mb-10"><Trans i18nKey="form.preparez-maintenant">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h1>
 
-            <div className="">
+            <div className="mb-10">
               <p className="mb-5">
-                avalon carp lake<br/>
+                <span className="uppercase">avalon carp lake</span><br/>
                 1 route de la faucherie<br/>
-                87270 limoges
+                87270 <span className="uppercase">limoges</span>
               </p>
               <hr className="mb-1"/>
               <hr/>

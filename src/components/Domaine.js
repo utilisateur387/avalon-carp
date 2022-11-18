@@ -46,8 +46,8 @@ const Domaine = () => {
             </div>
           </div>
 
-          <div className=''>
-            <h1 className="white text-left md:text-right mb-10"><Trans i18nKey="domaine.h1-02">Des <strong>infrastructures</strong> pensées pour <strong>optimiser votre expérience.</strong></Trans></h1>
+          <div>
+            <h1 className="white text-left md:text-right mb-10 mt-16 md:mt-0"><Trans i18nKey="domaine.h1-02">Des <strong>infrastructures</strong> pensées pour <strong>optimiser votre expérience.</strong></Trans></h1>
             <img src="images/domaine/img-domaine-01.png" class="md:-translate-x-24" alt="Icone clubhouse" />
           </div>
         </div>

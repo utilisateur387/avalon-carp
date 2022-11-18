@@ -64,7 +64,7 @@ i18n
             "carp": "Carp",
             "catfish": "Catfish",
             "haute-densite": "High fish density",
-            "decouvrez-photos": "DISCOVER <strong>THE BEST PHOTOS</strong> OF AVALON CARP LAKE :",
+            "decouvrez-photos": "DISCOVER <strong>THE BEST PHOTOS</strong> OF AVALON CARP LAKE:",
             "galerie-photos": "PHOTO GALLERY"
           },
           "reglement": {

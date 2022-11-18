@@ -8,7 +8,7 @@ const ContactForm = ({ title = true, infosPratiques = true }) => {
     <section class="contact-form-section">
         <div className="container-child">
             {title && 
-            <h2 class="text-center mx-auto"><Trans i18nKey="form.preparez-maintenant">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h2>
+              <h2 class="text-center mx-auto"><Trans i18nKey="form.preparez-maintenant">PRÉPAREZ DÈS MAINTENANT VOTRE <strong>PROCHAINE SESSION DE PÊCHE.</strong></Trans></h2>
             }
           <form action="" className="mx-auto contact-form">
             <div class="grid md:grid-cols-2 sm:grid-cols-1 md:gap-4">
@@ -23,15 +23,15 @@ const ContactForm = ({ title = true, infosPratiques = true }) => {
 
             <textarea type="textarea" placeholder={t('form.message')} className="w-full input-message"/>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               { !infosPratiques &&
                 <div></div>
               }
               <input type="submit" value={t('form.submit')} class="cta cta-green block"/>
               { infosPratiques &&
-                <a href="/contact" className="block">
+                <Link to="/contact" className="block">
                     <button class="cta cta-red w-full"><Trans i18nKey="form.infos-pratiques">Infos pratiques</Trans></button>
-                </a>
+                </Link>
               }
             </div>
           </form>
