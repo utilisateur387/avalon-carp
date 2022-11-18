@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const Reglement = () => {
   const { t, i18n } = useTranslation();
@@ -112,9 +113,9 @@ const Reglement = () => {
 
             <div className="uppercase text-right">
               <h2 className="bold"><Trans i18nKey="reglement.besoin-precisions">besoin de<br/>précisions ?</Trans></h2>
-              <a href="/contact">
-                <button class="cta cta-green"><Trans i18nKey="reglement.contactez-nous">CONTACTEZ-NOUS</Trans></button>  
-              </a>
+              <Link to="/contact">
+                <button class="cta cta-green mt-5"><Trans i18nKey="reglement.contactez-nous">CONTACTEZ-NOUS</Trans></button>  
+              </Link>
             </div>
           </div>
         </div>

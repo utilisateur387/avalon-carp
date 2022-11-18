@@ -114,6 +114,10 @@ h3 {
     .container-child {
       width: 100%;
       padding-bottom: 48px;
+
+      @media screen and (max-width: 640px) {        
+        padding-bottom: 60px;
+      }
     }
 }
 .caret-down {
@@ -124,12 +128,16 @@ h3 {
   justify-content: center;
   cursor: pointer;
 
-  @media screen and (max-width: 640px) {
-    bottom: 24px;
-  }
-
   img {
     width: 60px;
+  }
+
+  @media screen and (max-width: 640px) {
+    bottom: 20px;
+    
+    img {
+      width: 30px;
+    }
   }
 }
 .cta {
