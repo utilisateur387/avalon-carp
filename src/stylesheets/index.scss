@@ -48,15 +48,20 @@ a:visited {
   color: initial;
 }
 .bg-blur {
-    color: white;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 50px 60px;
-    
-    @media screen and (max-width: 768px) {
-      padding: 32px 40px;
-    }
+  transition: background-color 1s;
+  color: white;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(149.86deg, rgba(255, 255, 255, 0.3) 10.97%, rgba(255, 255, 255, 0) 102.5%);
+  padding: 50px 60px;
+
+  @media screen and (max-width: 768px) {
+    padding: 32px 40px;
+  }
 }
+.bg-blur:hover, .bg-blur:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .bg-beige {
   background-color: var(--beige);
 }
@@ -74,11 +79,15 @@ h1, h2 {
   text-transform: uppercase;
   line-height: 1.2em;
 }
-h1, .bold {
+h1 {
+  font-weight: normal;
+}
+.bold {
   font-weight: 600;
 }
 h3 {
   font-size: 1.25em;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .img-background {
@@ -93,6 +102,10 @@ h3 {
 .empty-first-container {
     height: 100vh;
     padding-bottom: 64px;
+
+    h1 {
+      font-weight: bold;
+    }
 
     .container-child {
       width: 100%;
