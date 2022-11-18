@@ -79,7 +79,7 @@ const Domaine = () => {
           </div>
 
           <div>
-            <img src="images/domaine/img-domaine-02.png" className="origin-top-right md:scale-125 w-screen md:w-full max-w-none md:max-w-full -translate-x-[32px]" alt="" />
+            <img src="images/domaine/img-domaine-02.png" className="origin-top-right md:scale-125 w-screen md:w-full max-w-none md:max-w-full -translate-x-[32px]  md:translate-x-0" alt="" />
             <div className="md:grid grid-cols-6">
               <div className='col-span-1'></div>
               <p className="white md:translate-y-32 block md:col-span-4 mt-[3rem] md:mt-auto">
