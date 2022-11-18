@@ -2,10 +2,139 @@
     font-family: 'Mohave';
     src: url('./Mohave-Bold.ttf');
     src:
-    url('./Mohave-Bold.ttf') format('ttf'),
-        /*url('../../fonts/ABCArizonaSerif-Thin-Trial.eot?#iefix') format('embedded-opentype'),*/
-        /* url('./ABCArizonaSerif-Thin-Trial.woff') format('woff'),
-        url('./ABCArizonaSerif-Thin-Trial.otf') format('opentype'); */;
+    url('./Mohave-Bold.ttf') format('ttf');
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-BoldItalic.eot');
+    src: url('Mohave-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-BoldItalic.woff2') format('woff2'),
+        url('Mohave-BoldItalic.woff') format('woff'),
+        url('Mohave-BoldItalic.svg#Mohave-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-Bold.eot');
+    src: url('Mohave-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-Bold.woff2') format('woff2'),
+        url('Mohave-Bold.woff') format('woff'),
+        url('Mohave-Bold.svg#Mohave-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-Italic.eot');
+    src: url('Mohave-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-Italic.woff2') format('woff2'),
+        url('Mohave-Italic.woff') format('woff'),
+        url('Mohave-Italic.svg#Mohave-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-LightItalic.eot');
+    src: url('Mohave-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-LightItalic.woff2') format('woff2'),
+        url('Mohave-LightItalic.woff') format('woff'),
+        url('Mohave-LightItalic.svg#Mohave-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-Light.eot');
+    src: url('Mohave-Light.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-Light.woff2') format('woff2'),
+        url('Mohave-Light.woff') format('woff'),
+        url('Mohave-Light.svg#Mohave-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-Medium.eot');
+    src: url('Mohave-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-Medium.woff2') format('woff2'),
+        url('Mohave-Medium.woff') format('woff'),
+        url('Mohave-Medium.svg#Mohave-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-LightItalic.eot');
+    src: url('Mohave-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-LightItalic.woff2') format('woff2'),
+        url('Mohave-LightItalic.woff') format('woff'),
+        url('Mohave-LightItalic.svg#Mohave-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-MediumItalic.eot');
+    src: url('Mohave-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-MediumItalic.woff2') format('woff2'),
+        url('Mohave-MediumItalic.woff') format('woff'),
+        url('Mohave-MediumItalic.svg#Mohave-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-Regular.eot');
+    src: url('Mohave-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-Regular.woff2') format('woff2'),
+        url('Mohave-Regular.woff') format('woff'),
+        url('Mohave-Regular.svg#Mohave-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-SemiBoldItalic.eot');
+    src: url('Mohave-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-SemiBoldItalic.woff2') format('woff2'),
+        url('Mohave-SemiBoldItalic.woff') format('woff'),
+        url('Mohave-SemiBoldItalic.svg#Mohave-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-SemiBold.eot');
+    src: url('Mohave-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-SemiBold.woff2') format('woff2'),
+        url('Mohave-SemiBold.woff') format('woff'),
+        url('Mohave-SemiBold.svg#Mohave-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
