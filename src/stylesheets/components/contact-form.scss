@@ -42,4 +42,19 @@
             outline: none;
         }
     }
+    input[type=submit] {
+        cursor: pointer;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    .form-message {
+        color: var(--mauve);
+        font-weight: bold;
+        text-transform: uppercase;
+        // opacity: 0;
+    }
 }

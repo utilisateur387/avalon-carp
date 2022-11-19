@@ -7,6 +7,7 @@
 @import "./pages/home.scss";
 @import "./pages/contact.scss";
 @import "./pages/domaine.scss";
+@import "./pages/galerie.scss";
 @import "./pages/offres.scss";
 @import "./pages/reglement.scss";
 @tailwind base;
@@ -148,6 +149,11 @@ h3 {
 .cta-green {
   background-color: var(--green);
   color: var(--beige);
+  transition: background-color 500ms;
+
+  &:hover {
+    background-color: #373E2D;
+  }
 }
 .cta-red {
   background-color: var(--orange);
