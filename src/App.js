@@ -11,18 +11,22 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 function App() {
+  const scrollTop = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header scrollTop={scrollTop} />
       {/* <Menu /> */}
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/domaine" element={<Domaine />} />
+          <Route path="/" element={<Home scrollTop={scrollTop} />} />
+          <Route path="/domaine" element={<Domaine scrollTo={scrollTop} />} />
           <Route path="/galerie" element={<Galerie />} />
           <Route path="/offres" element={<Offres />} />
           <Route path="/reglement" element={<Reglement />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact scrollTop={scrollTop} />} />
         </Routes>
       </main>
       <Footer />

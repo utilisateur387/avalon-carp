@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
 import { useTranslation, Trans } from 'react-i18next';
 
-const Domaine = () => {
+const Domaine = ({scrollTop}) => {
   const { t, i18n } = useTranslation();
+
+  const handleClickLink = () => {
+    scrollTop()
+  }
 
   return (
     <div className="page-domaine">
@@ -139,15 +144,15 @@ const Domaine = () => {
         <div className="container-child text-center flex justify-center flex-col">
           <h1 className="text-center w-8/12 mx-auto green"><Trans i18nKey="domaine.decouvrez-photos">DÉCOUVREZ <strong>LES PLUS BELLES PHOTOS</strong> DE AVALON CARP LAKE :</Trans></h1>
 
-          <div className="flex space-x-3 justify-center my-5">
-            <img src="images/domaine/img-domaine-galerie-01.png" alt="" className='max-w-[32%]'/>
-            <img src="images/domaine/img-domaine-galerie-02.png" alt="" className='max-w-[32%]'/>
-            <img src="images/domaine/img-domaine-galerie-03.png" alt="" className='max-w-[32%]'/>
+          <div className="flex sm:space-x-3 justify-center my-5">
+            <img src="images/domaine/img-domaine-galerie-01.png" alt="" className='max-w-[32%] hidden sm:block'/>
+            <img src="images/domaine/img-domaine-galerie-02.png" alt="" className='sm:max-w-[32%]'/>
+            <img src="images/domaine/img-domaine-galerie-03.png" alt="" className='max-w-[32%] hidden sm:block'/>
           </div>
 
-          <a href="/galerie">
+          <Link to="/galerie" onClick={handleClickLink}>
             <button className="cta cta-green"><Trans i18nKey="domaine.galerie-photos">GALERIE DE PHOTOS</Trans></button>
-          </a>
+          </Link>
         </div>
       </div> 
     

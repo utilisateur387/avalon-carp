@@ -1,6 +1,6 @@
 import { useTranslation, Trans } from 'react-i18next';
 import ContactForm from './ContactForm';
-const Home = () => {
+const Home = ({scrollTop}) => {
   // const backgroundImg = `images/home/img-background-01.png`;
   const { t, i18n } = useTranslation();
 
@@ -56,7 +56,7 @@ const Home = () => {
 
       <div className="container-full bg-beige">
         <div className="container-child">
-          <ContactForm/>
+          <ContactForm scrollTop={scrollTop} />
         </div>
       </div>
     </div>

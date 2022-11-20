@@ -50,7 +50,7 @@ const Menu = ({ isMenuVisible, setIsMenuVisible }) => {
           <Link to="/contact" onClick={handleClickMenuLink}>
             <Trans i18nKey="nav.link4">Contact</Trans>
           </Link>
-          <div className="white mt-10">
+          <div className="white mt-10 text-xl">
             {Object.keys(lngs).map((lng) => (
               <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal', margin: '0 3px' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
                 {lngs[lng].nativeName}

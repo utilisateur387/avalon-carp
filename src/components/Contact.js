@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation, Trans } from 'react-i18next';
 import ContactForm from "./ContactForm";
 
-const Contact = () => {
+const Contact = ({scrollTop}) => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <ContactForm title={false} infosPratiques={false} />
+          <ContactForm title={false} infosPratiques={false} scrollTop={scrollTop} />
         </div>
       </div>
 

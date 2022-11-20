@@ -3,7 +3,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import emailjs from 'emailjs-com';
 import { useState } from "react";
 
-const ContactForm = ({ title = true, infosPratiques = true }) => {
+const ContactForm = ({ title = true, infosPratiques = true, scrollTop }) => {
   const { t, i18n } = useTranslation();
   const [formResult, setFormResult] = useState(null)
 
@@ -23,6 +23,10 @@ const ContactForm = ({ title = true, infosPratiques = true }) => {
 
       e.target.reset();
   };
+
+  const handleClickInfosPratiques = () => {
+    scrollTop()
+  }
 
   return (
     <section class="contact-form-section">
@@ -65,7 +69,7 @@ const ContactForm = ({ title = true, infosPratiques = true }) => {
 
               {/* INFOS PRATIQUES */}
               { infosPratiques &&
-                <Link to="/contact" className="block">
+                <Link to="/contact" className="block" onClick={handleClickInfosPratiques}>
                     <button class="cta cta-red w-full"><Trans i18nKey="form.infos-pratiques">Infos pratiques</Trans></button>
                 </Link>
               }

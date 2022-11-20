@@ -60,7 +60,6 @@ header {
         display: flex;
         justify-content: center;
     }
-
     .menu-burger {
         display: none;
         position: fixed;
@@ -72,5 +71,13 @@ header {
         @media screen and (max-width: 768px) {
             display: block;
         }
+    }
+    .language-buttons {
+        position: fixed;
+        top: 0;
+        right: 32px;
+        height: 32px;
+        padding: 8px;
+        font-size: 14px;
     }
 }

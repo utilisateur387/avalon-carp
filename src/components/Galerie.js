@@ -9,7 +9,7 @@ const Galerie = () => {
       <div className="container-child">
         <h1 className='text-center green mb-10'><Trans i18nKey="galerie.h1">DÉCOUVREZ LES PLUS BELLES PHOTOS DE AVALON CARP LAKE.</Trans></h1>
           
-        <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
           <img src="images/galerie/img-galerie-46.jpg" alt="" />
           <img src="images/galerie/img-galerie-47.jpg" alt="" />
           <img src="images/galerie/img-galerie-48.jpg" alt="" />
