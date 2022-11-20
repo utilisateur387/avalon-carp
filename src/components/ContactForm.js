@@ -13,11 +13,10 @@ const ContactForm = ({ title = true, infosPratiques = true, scrollTop }) => {
     emailjs.sendForm('service_onom4fm', 'template_yhb9gdf', e.target, 'nnuzeqvSI4LXDh3Uw') // SendGrid
     // emailjs.sendForm('service_d692m41', 'template_yhb9gdf', e.target, 'nnuzeqvSI4LXDh3Uw') // Gmail
       .then((result) => {
-          console.log(result.text);
+          // console.log(result.text);
           setFormResult('success')
-          console.log(formResult);
         }, (error) => {
-          console.log(error.text);
+          // console.log(error.text);
           setFormResult('error')
       });
 

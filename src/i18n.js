@@ -24,7 +24,8 @@ i18n
             "link1": "The Site",
             "link2": "Offers",
             "link3": "Rules",
-            "link4": "Contact Us"
+            "link4": "Contact Us",
+            "galerie": "Gallery"
           },
           "home": {
             "h1": "A break fishing and relaxing in the heart of the French forests of the Limousin.",
@@ -145,7 +146,8 @@ i18n
             "link1": "Le Domaine",
             "link2": "Nos Offres",
             "link3": "Règlement",
-            "link4": "Contact"
+            "link4": "Contact",
+            "galerie": "Galerie"
           },
           "home": {
             "h1": "Un moment de pêche et de détente au coeur des forêts du Limousin.",
