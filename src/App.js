@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 function App() {
   const scrollTop = () => {
     window.scrollTo(0, 0)
+    console.log('scroll top')
   }
 
   return (

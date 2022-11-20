@@ -4,6 +4,10 @@ import { useTranslation, Trans } from 'react-i18next';
 const Footer = () => {
   const { t, i18n } = useTranslation();
 
+  const handleClickLink = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <footer className="container-full">
       <div className="md:grid grid-cols-12 gap-4 container-child flex justify-center">
@@ -11,16 +15,18 @@ const Footer = () => {
         <div></div>
 
         <div className="col-span-3">
-          <img src="images/elements/logo-filled-white.png" className="footer-logo" alt="lac"/>
+          <Link to="/" onClick={handleClickLink}>
+            <img src="images/elements/logo-filled-white.png" className="footer-logo" alt="lac"/>
+          </Link>
         </div>
 
         <div></div>
 
         <ul className="footer-links col-span-3">
-          <li><Link to="/"><Trans i18nKey="footer.link1">Accueil</Trans></Link></li>
-          <li><Link to="/domaine"><Trans i18nKey="footer.link2">Domaine</Trans></Link></li>
-          <li><Link to="/reglement"><Trans i18nKey="footer.link3">Règlement</Trans></Link></li>
-          <li><Link to="/contact"><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
+          <li><Link to="/" onClick={handleClickLink}><Trans i18nKey="footer.link1">Accueil</Trans></Link></li>
+          <li><Link to="/domaine" onClick={handleClickLink}><Trans i18nKey="footer.link2">Domaine</Trans></Link></li>
+          <li><Link to="/reglement" onClick={handleClickLink}><Trans i18nKey="footer.link3">Règlement</Trans></Link></li>
+          <li><Link to="/contact" onClick={handleClickLink}><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
 
           <div className="flex space-x-3 my-4 justify-center md:justify-start">
             <a href="https://www.facebook.com/Avaloncarp/" target="_blank"><img src="images/picto-fb.svg" alt="" /></a>
