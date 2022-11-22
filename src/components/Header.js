@@ -53,13 +53,13 @@ const Header = ({scrollTop}) => {
             <NavLink 
               to="domaine" 
               onClick={handleClickLink} 
-              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
+              className={({ isActive }) => isActive ? 'header-link font-bold underline' : 'header-link' }>
               <Trans i18nKey="nav.link1">Le Domaine</Trans>
             </NavLink>
             <NavLink 
               to="offres" 
               onClick={handleClickLink} 
-              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
+              className={({ isActive }) => isActive ? 'header-link font-bold underline' : 'header-link' }>
               <Trans i18nKey="nav.link2">Nos Offres</Trans>
             </NavLink>
             <Link to="/" className="header-link" onClick={handleClickLogo}>
@@ -68,13 +68,13 @@ const Header = ({scrollTop}) => {
             <NavLink 
               to="reglement" 
               onClick={handleClickLink} 
-              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
+              className={({ isActive }) => isActive ? 'header-link font-bold underline' : 'header-link' }>
               <Trans i18nKey="nav.link3">Règlement</Trans>
             </NavLink>            
             <NavLink 
               to="contact" 
               onClick={handleClickLink} 
-              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
+              className={({ isActive }) => isActive ? 'header-link font-bold underline' : 'header-link' }>
               <Trans i18nKey="nav.link4">Contact</Trans>
             </NavLink>
           </div>

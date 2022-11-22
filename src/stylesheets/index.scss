@@ -52,7 +52,7 @@ a:visited {
 .bg-blur {
   transition: background-color 1s;
   color: white;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   background: linear-gradient(149.86deg, rgba(255, 255, 255, 0.3) 10.97%, rgba(255, 255, 255, 0) 102.5%);
   padding: 50px 60px;
 
@@ -60,9 +60,9 @@ a:visited {
     padding: 32px 40px;
   }
 }
-.bg-blur:hover, .bg-blur:focus {
-  background-color: rgba(255, 255, 255, 0.05);
-}
+// .bg-blur:hover, .bg-blur:focus {
+//   background-color: rgba(255, 255, 255, 0.05);
+// }
 
 .bg-beige {
   background-color: var(--beige);
@@ -134,7 +134,7 @@ h3 {
   width: 100vw;
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  // cursor: pointer;
 
   img {
     width: 60px;
