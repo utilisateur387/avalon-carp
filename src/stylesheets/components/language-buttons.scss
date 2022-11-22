@@ -1,0 +1,22 @@
+.language-buttons-container {
+    position: fixed;
+    width: 100vw;
+    height: 30px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    & > div {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+.language-buttons {
+    padding: 8px !important;
+    font-size: 14px;
+    color: white;
+}

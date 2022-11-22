@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../logo-white.svg';
 import { useTranslation, Trans } from 'react-i18next';
 import Menu from "./Menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = ({scrollTop}) => {
   const { i18n } = useTranslation();
@@ -24,41 +24,75 @@ const Header = ({scrollTop}) => {
     scrollTop()
   }
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+      const currentScrollPos = window.scrollY
+
+      if(currentScrollPos > prevScrollPos){
+          setVisible(false)
+      }else{
+          setVisible(true)
+      }
+
+      setPrevScrollPos(currentScrollPos)
+  }
+
+  useEffect( () => {
+      window.addEventListener('scroll', handleScroll);
+
+      return () => window.removeEventListener('scroll', handleScroll)
+  })
+
   return (
     <>
-      <header className="z-[1000]">
-        <div className="container-full header-desktop" style={{background: isMenuVisible ? 'none' : 'linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%)'}} >
+      <header className={`z-[1000] sticky ${visible ? 'top-0' : '-top-[142px]'}`}>
+        <div className="container-full header-desktop" style={{background: isMenuVisible ? 'none' : 'linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%)'}} >
           <div className="container-child">
-            <Link to="/domaine" className="header-link" onClick={handleClickLink}>
+            <NavLink 
+              to="domaine" 
+              onClick={handleClickLink} 
+              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
               <Trans i18nKey="nav.link1">Le Domaine</Trans>
-            </Link>
-            <Link to="/offres" className="header-link" onClick={handleClickLink}>
+            </NavLink>
+            <NavLink 
+              to="offres" 
+              onClick={handleClickLink} 
+              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
               <Trans i18nKey="nav.link2">Nos Offres</Trans>
-            </Link>
+            </NavLink>
             <Link to="/" className="header-link" onClick={handleClickLogo}>
               <img src={logo} className="header-logo" alt="logo" />
             </Link>
-            <Link to="/reglement" className="header-link" onClick={handleClickLink}>
+            <NavLink 
+              to="reglement" 
+              onClick={handleClickLink} 
+              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
               <Trans i18nKey="nav.link3">Règlement</Trans>
-            </Link>
-            <Link to="/contact" className="header-link" onClick={handleClickLink}>
+            </NavLink>            
+            <NavLink 
+              to="contact" 
+              onClick={handleClickLink} 
+              className={({ isActive }) => isActive ? 'header-link font-bold' : 'header-link' }>
               <Trans i18nKey="nav.link4">Contact</Trans>
-            </Link>
+            </NavLink>
           </div>
         </div>
 
         <img src={!isMenuVisible ? "images/picto-menu-burger.svg" : "images/picto-menu-cross.svg"} alt="" className="menu-burger" onClick={handleClickBurger} />
+      </header>
 
-        <div className="language-buttons bg-green hidden md:flex align-center">
+      {/* <div className="language-buttons-container">
+        <div className="language-buttons bg-green hidden md:flex align-center container-child">
             {Object.keys(lngs).map((lng) => (
               <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal', margin: '0 2px' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
                 {lngs[lng].nativeName}
               </button>
             ))}
         </div>
+      </div> */}
 
-
-      </header>
       <Menu isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible} />
     </>
   )

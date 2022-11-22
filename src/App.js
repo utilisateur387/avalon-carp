@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Domaine from "./components/Domaine";
 import Galerie from "./components/Galerie";
+import LanguageButtons from "./components/LanguageButtons";
 import Offres from "./components/Offres";
 import Reglement from "./components/Reglement";
 import Contact from "./components/Contact";
@@ -18,6 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header scrollTop={scrollTop} />
+      <LanguageButtons />
       {/* <Menu /> */}
       <main>
         <Routes>

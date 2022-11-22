@@ -2,13 +2,12 @@ header {
     position: fixed;
     width: 100vw;
     color: white !important;
+    transition: top 0.5s;
 
     & div.container-full {
         z-index: 100;
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.588) 100%);
         padding: 0;
         width: 100vw;
-        // font-weight: 500;
     }
     & div.container-child {
         display: flex;
@@ -37,6 +36,11 @@ header {
         display: block;
         width: 15%;
         color: white !important;
+        font-size: 1.25em;
+
+        &:hover {
+            font-weight: bold;
+        }
 
         @media screen and (max-width: 768px) {
             &:nth-child(1),
@@ -71,13 +75,5 @@ header {
         @media screen and (max-width: 768px) {
             display: block;
         }
-    }
-    .language-buttons {
-        position: fixed;
-        top: 0;
-        right: 32px;
-        height: 32px;
-        padding: 8px;
-        font-size: 14px;
     }
 }
