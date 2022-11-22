@@ -16,7 +16,7 @@ const Footer = () => {
 
         <div className="col-span-3">
           <Link to="/" onClick={handleClickLink}>
-            <img src="images/elements/logo-filled-white.png" className="footer-logo" alt="lac"/>
+            <img src="images/elements/logo-pastille.svg" className="footer-logo" alt="lac"/>
           </Link>
         </div>
 
@@ -29,8 +29,18 @@ const Footer = () => {
           <li><Link to="/contact" onClick={handleClickLink}><Trans i18nKey="footer.link4">Contact</Trans></Link></li>
 
           <div className="flex space-x-3 my-4 justify-center md:justify-start">
-            <a href="https://www.facebook.com/Avaloncarp/" target="_blank"><img src="images/picto-fb.svg" alt="" /></a>
-            <a href="https://www.instagram.com/avalon_carp_lake/" target="_blank"><img src="images/picto-ig.svg" alt="" /></a>
+            <a href="https://www.facebook.com/Avaloncarp/" target="_blank" className="picto-social picto-fb">
+              {/* <img src="images/elements/picto-fb-mauve.svg" alt="" /> */}
+              
+              {/* <div>
+                <object data="images/picto-fb.svg" className="logo-fb"></object>
+              </div> */}
+            </a>
+            <a href="https://www.instagram.com/avalon_carp_lake/" target="_blank" className="picto-social picto-ig">
+              
+              {/* <object data="images/picto-ig.svg" className="logo-ig">
+              </object> */}
+            </a>
           </div>
           
           <li><Link to="/docs/avalon_carp_politique_confidentialite.pdf" target="_blank"><Trans i18nKey="footer.link5">Politique de confidentialité</Trans></Link></li>

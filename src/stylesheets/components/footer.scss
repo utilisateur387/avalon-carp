@@ -36,8 +36,30 @@ footer {
     .footer-links {
         list-style-type: none;
         padding-left: 0;
-    }
-    .footer-infos {
 
+        & li:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .picto-social {
+        background-image: url(../../../public/images/elements/picto-fb-mauve.svg);
+        background-size: contain;
+        background-position: center;
+        width: 42px;
+        height: 42px;
+    }
+    .picto-fb {
+        background-image: url(../../../public/images/elements/picto-fb-mauve.svg);
+
+        &:hover {
+            background-image: url(../../../public/images/elements/picto-fb-white.svg);
+        }
+    }
+    .picto-ig {
+        background-image: url(../../../public/images/elements/picto-ig-mauve.svg);
+        &:hover {
+            background-image: url(../../../public/images/elements/picto-ig-white.svg);
+        }
     }
 }

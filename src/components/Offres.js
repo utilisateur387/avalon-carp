@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 const Offres = () => {
   const { t, i18n } = useTranslation();
 
+  const handleClickLink = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <div className="page-offres">
       <img src="images/offres/img-background-offres.jpg" className="img-background" alt="lac"/> 
@@ -24,7 +28,7 @@ const Offres = () => {
       </div>
 
       <div className="container-full bg-mauve">
-        <div class="cards container-child justify-between md:columns-3 sm:columns-1">
+        <div class="cards container-child justify-between grid md:grid-cols-3 sm:grid-cols-1 md:gap-4">
           <div class="card bg-blur">
             <div className="flex justify-center offre-picto">
               <img src="images/offres/picto-drive-survive.svg" alt="" />
@@ -89,7 +93,7 @@ const Offres = () => {
 
           <div className='flex items-end flex-col'>
             <img src="images/offres/img-equipe-02.jpg" className="origin-top-right md:scale-[115%] w-screen md:w-full max-w-none md:max-w-full md:mt-10 md:mb-[5rem] translate-x-[32px] md:translate-x-0" alt="" />
-            <Link to="/contact" className='z-10 mt-10 md:mt-0 w-full md:w-fit'>
+            <Link to="/contact" className='z-10 mt-10 md:mt-0 w-full md:w-fit' onClick={handleClickLink}>
               <button className="cta cta-beige w-full md:w-fit"><Trans i18nKey="offres.contactez-nous">Contactez-nous</Trans></button>
             </Link>
           </div>
